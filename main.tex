@@ -1,0 +1,64 @@
+
+\documentclass[11pt]{article}
+\usepackage{standalone}
+\usepackage[margin=0.75in, headheight=20pt]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage{tikz}
+\usetikzlibrary{shadings,intersections}
+
+\usepackage{caption,tabularx,booktabs}
+
+\usepackage{rotating}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.25em}
+\renewcommand{\baselinestretch}{1.0}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{ Clarke | Blostein | Queen's University}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{courier}
+
+\usepackage[]{algorithm2e}
+\usepackage{mathrsfs}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+
+
+
+\title{Performance comparison between unconstrained and SUS-constrained linear MRT beamforming}
+\author{J.E. Clarke, Dr. S.D. Blostein | Queen's University}
+\date{Fall, 2018}
+
+\begin{document}
+	\maketitle
+	\newpage
+	\section{Introduction and Summary of Results}
+	    \input{summary.tex}
+	\section{Discussion of Results}
+	    \input{results.tex}
+%	\section{Gaussian approximation of sum rate}
+%	    \input{clt.tex}
+%	\section{Maximum of normal distribution under constant mean, variance, correlation}
+%	    \input{tong.tex}
+%	\section{Calculation, justification of constant mean, variance and correlation}
+%	    \input{const_approx.tex}
+    \newpage	
+ 	\begingroup
+ 		\renewcommand{\section}[2]{}%
+ 		\bibliographystyle{IEEEtran}
+ %		\bibliography{references}
+ 	\endgroup
+\end{document}
